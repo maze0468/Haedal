@@ -10,7 +10,7 @@ soup = bs4.BeautifulSoup(response, 'html.parser')
 
 ranks = soup.select('#rankingChart > ul > li')
 
-with open('kin_rank4.csv', 'w') as f:
+with open('kin_rank_f.csv', 'w') as f:
     writer = csv.writer(f, delimiter=",", quotechar='"')
     for rank in ranks:
         num = rank.select_one('span.no').text
