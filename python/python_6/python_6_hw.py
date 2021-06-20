@@ -5,7 +5,7 @@ headers = {
     'User-Agent': 'Not_Crawling X)'
 }
 response = requests.get('https://kin.naver.com/', headers=headers).text
-soup = bs4.BeautifulSoup(response, 'html.parser')
+soup = bs4.BeautifulSoup(response, "html.parser")
 
 ranks = soup.select('#rankingChart > ul > li')
 
