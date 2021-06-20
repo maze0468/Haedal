@@ -19,4 +19,4 @@ with open('kin_rank_.csv', 'w') as f:
     for rank in sorted(ranks, key=num):
         num2 = num(rank)
         title2 = title(rank)
-        writer.writerow([f'{num2}위',{title2}])
+        writer.writerow([f'{num2}위',title2])
