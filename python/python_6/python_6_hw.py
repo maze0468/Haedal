@@ -13,4 +13,4 @@ with open('kin_rank.csv', 'w') as f:
     for rank in ranks:
         num = rank.select_one('span.no').text
         title = rank.select_one('a.ranking_title').text
-        f.write(f'{num},{title}\n')
+        f.write(f'{num}위,{title}\n')
